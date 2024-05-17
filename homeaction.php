@@ -11,7 +11,7 @@ if(isset($_POST["categoryhome"])){
 				<div id='responsive-nav'>
 					<!-- NAV -->
 					<ul class='main-nav nav navbar-nav'>
-						<li class='active'><a href='index.php'>Home</a></li>";
+						<li><a href='index.php'>Home</a></li>";
 						$category_query = "SELECT * FROM categories";
 						$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));
 						if(mysqli_num_rows($run_query) > 0){
