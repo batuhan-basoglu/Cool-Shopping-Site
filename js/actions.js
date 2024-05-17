@@ -170,7 +170,7 @@ $(document).ready(function(){
 			url		:	"action.php",
 			method	:	"POST",
 			data	:	{search:1,keyword:keyword},
-			success	:	function(data){ 
+			success	:	function(data){
 				$("#get_product").html(data);
 				if($("body").width() < 480){
 					$("body").scrollTop(683);
