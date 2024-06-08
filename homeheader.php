@@ -196,6 +196,12 @@ session_start();
 						<!-- ACCOUNT -->
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
+								<div>
+									<a href="products.php">
+										<i class="fa fa-search"></i>
+										<span>Search</span>
+									</a>
+								</div>
 								<!-- Wishlist -->
 								
 								<!-- /Wishlist -->
