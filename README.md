@@ -2,7 +2,7 @@
 
 A cool shopping site made using PHP, CSS, Javascript and MySQL.
 
-Note: Adding and Removing items to Carts/Wishlist and Registration needs be fixed.
+Note: Adding and Removing items to Carts/Wishlist needs to be fixed.
 
 # Installation
 
@@ -31,11 +31,11 @@ Note: Adding and Removing items to Carts/Wishlist and Registration needs be fixe
 Here are some existing users for login
 
 * Admin:
-    * E-Mail: admin@gmail.com
+    * E-Mail: admin@domain.com
     * Password: 123456789
 
 * User 1:
-    * E-Mail: sample@gmail.com
+    * E-Mail: user@domain.com
     * Password: password
     
 # Mirrors

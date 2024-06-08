@@ -109,11 +109,14 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		";
 		exit();
 	} else {
-		
+
+		$db_sql = "SELECT * FROM user_info";
+    	$db_query = mysqli_query($con, $db_sql);
+    	$count_db = mysqli_num_rows($db_query);
 		$sql = "INSERT INTO `user_info` 
 		(`user_id`, `first_name`, `last_name`, `email`, 
 		`password`, `mobile`, `address1`, `address2`) 
-		VALUES (NULL, '$f_name', '$l_name', '$email', 
+		VALUES ($count_db + 1, '$f_name', '$l_name', '$email', 
 		'$password', '$mobile', '$address1', '$address2')";
 		$run_query = mysqli_query($con,$sql);
 		$_SESSION["uid"] = mysqli_insert_id($con);
@@ -131,59 +134,4 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 }
 
 
-
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
