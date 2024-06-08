@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 16, 2024 at 05:54 AM
+-- Generation Time: Jun 08, 2024 at 10:33 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -47,7 +47,7 @@ CREATE TABLE `admin_info` (
 --
 
 INSERT INTO `admin_info` (`admin_id`, `admin_name`, `admin_email`, `admin_password`) VALUES
-(1, 'admin', 'admin@gmail.com', '25f9e794323b453885f5181f1b624d0b');
+(1, 'admin', 'admin@domain.com', '25f9e794323b453885f5181f1b624d0b');
 
 -- --------------------------------------------------------
 
@@ -358,7 +358,7 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(25, 'John', 'Doe', 'sample@gmail.com', 'password', '1234567890', 'Montreal', '');
+(1, 'John', 'Doe', 'user@domain.com', 'password', '1234567890', 'Montreal', '');
 
 --
 -- Triggers `user_info`
@@ -392,7 +392,7 @@ CREATE TABLE `user_info_backup` (
 --
 
 INSERT INTO `user_info_backup` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(25, 'John', 'Doe', 'sample@gmail.com', 'password', '1234567890', 'Montreal', '');
+(1, 'John', 'Doe', 'user@domain.com', 'password', '1234567890', 'Montreal', '');
 
 -- --------------------------------------------------------
 
