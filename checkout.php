@@ -294,13 +294,13 @@ span.price {
 									<a href="#"><i class="fa fa-facebook"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="https://twitter.com/batuhanbasogluu"><i class="fa fa-twitter"></i></a>
 								</li>
 								<li>
 									<a href="#"><i class="fa fa-instagram"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
+									<a href="https://github.com/batuhan-basoglu"><i class="fa fa-github"></i></a>
 								</li>
 							</ul>
 						</div>

@@ -34,10 +34,12 @@ if (isset($_POST["email"])) {
             ";
             exit();
         }else{
-            
+            $db_sql = "SELECT * FROM email_info";
+    	    $db_query = mysqli_query($con, $db_sql);
+    	    $count_db = mysqli_num_rows($db_query);
             $sql = "INSERT INTO `email_info` 
             (`email_id`, `email`)
-            VALUES (NULL, '$email')";
+            VALUES ($count_db + 1, '$email')";
             $run_query = mysqli_query($con,$sql);
                 echo "<div class='alert alert-success'>
                     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
