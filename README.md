@@ -28,7 +28,7 @@ Note: Adding and Removing items to Carts/Wishlist and Registration needs be fixe
 
 # Accounts
 
-There are bugs with creating any user but here are some existing users.
+Here are some existing users for login
 
 * Admin:
     * E-Mail: admin@gmail.com
