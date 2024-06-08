@@ -77,7 +77,7 @@ if(isset($_SESSION["uid"])){
 		</div>
 		<div class="flex-m w-full p-b-33">
 		<div class="contact100-form-checkbox">
-		<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+		<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" required>
 		<label class="label-checkbox100" for="ckb1">
 		<span class="txt1">
 		I agree to the
