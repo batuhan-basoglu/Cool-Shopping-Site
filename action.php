@@ -272,9 +272,9 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			echo "
 				<div class='alert alert-warning'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is already added into the cart Continue Shopping..!</b>
+						<b>Product is already added into the cart continue shopping.</b>
 				</div>
-			";//not in video
+			";
 		} else {
 			$db_sql = "SELECT * FROM cart";
 			$db_query = mysqli_query($con, $db_sql);
@@ -286,7 +286,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				if(mysqli_query($con,$sql)){
 					echo "<div class='alert alert-danger'>
 									<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-									<b>Product is removed from wishlist and added to cart</b>
+									<b>Product is added to cart</b>
 							</div>";
 					
 				}
@@ -300,7 +300,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				echo "
 					<div class='alert alert-warning'>
 							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-							<b>Product is already added into the cart Continue Shopping..!</b>
+							<b>Product is already added into the cart continue shopping.</b>
 					</div>";
 					exit();
 			}
@@ -315,7 +315,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				if(mysqli_query($con,$sql)){
 					echo "<div class='alert alert-danger'>
 									<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-									<b>Product is removed from wishlist and added to cart</b>
+									<b>Product is added to cart</b>
 							</div>";
 					exit();
 				}
@@ -342,9 +342,9 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			echo "
 				<div class='alert alert-warning'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is already added into the wishlist Continue Shopping..!</b>
+						<b>Product is already added into the wishlist continue shopping.</b>
 				</div>
-			";//not in video
+			";
 		} else {
 			$db_sql = "SELECT * FROM wishlist";
 			$db_query = mysqli_query($con, $db_sql);
@@ -356,7 +356,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				if(mysqli_query($con,$sql)){
 					echo "<div class='alert alert-danger'>
 									<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-									<b>Product is removed from cart and added to wishlist</b>
+									<b>Product is added to wishlist</b>
 							</div>";
 					
 				}
@@ -369,7 +369,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				echo "
 					<div class='alert alert-warning'>
 							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-							<b>Product is already added into the wishlist Continue Shopping..!</b>
+							<b>Product is already added into the wishlist continue shopping.</b>
 					</div>";
 					exit();
 			}
@@ -383,7 +383,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				if(mysqli_query($con,$sql)){
 					echo "<div class='alert alert-danger'>
 									<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-									<b>Product is removed from cart and added to wishlist</b>
+									<b>Product is added to wishlist</b>
 							</div>";
 					exit();
 				}
