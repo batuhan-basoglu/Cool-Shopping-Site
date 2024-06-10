@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 10, 2024 at 01:30 AM
+-- Generation Time: Jun 10, 2024 at 04:58 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -93,7 +93,9 @@ CREATE TABLE `cart` (
 INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
 (1, 72, '::1', 1, 1),
 (2, 1, '::1', 1, 4),
-(3, 8, '::1', 1, 3);
+(3, 8, '::1', 1, 3),
+(4, 71, '127.0.0.1', 0, 1),
+(5, 1, '127.0.0.1', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -170,8 +172,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
-(1, 12, 7, 1, '07M47684BS5725041', 'Completed'),
-(2, 14, 2, 1, '07M47684BS5725041', 'Completed');
+(1, 1, 7, 1, '07M47684BS5725041', 'Completed'),
+(2, 1, 2, 1, '07M47684BS5725041', 'Completed');
 
 -- --------------------------------------------------------
 
@@ -201,7 +203,7 @@ CREATE TABLE `orders_info` (
 --
 
 INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) VALUES
-(1, 12, 'support', 'batuhanbasoglu@mailbox.org', 'Montreal, Quebec, Canada', 'Montreal', 'Quebec', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
+(1, 1, 'support', 'batuhanbasoglu@mailbox.org', 'Montreal, Quebec, Canada', 'Montreal', 'Quebec', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
 
 -- --------------------------------------------------------
 
