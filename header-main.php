@@ -124,7 +124,7 @@ session_start();
 					<ul class="header-links pull-left">
 						<li><a href="tel:+14385963135"><i class="fa fa-phone"></i> 438-596-3135</a></li>
 						<li><a href="mailto:batuhanbasoglu@mailbox.org"><i class="fa fa-envelope-o"></i> batuhanbasoglu@mailbox.org</a></li>
-						<li><a href="https://www.google.com/maps/place/Montreal,+QC/"><i class="fa fa-map-marker"></i>Montreal</a></li>
+						<li><a href="https://www.google.com/maps/place/Montreal,+QC/" target="_blank"><i class="fa fa-map-marker"></i>Montreal</a></li>
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="https://www.bankofcanada.ca/rates/exchange/currency-converter/" target="_blank"><i class="fa fa-usd"></i> CAD</a></li>
