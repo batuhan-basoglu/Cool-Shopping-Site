@@ -2,7 +2,7 @@
 
 A cool shopping site made using PHP, CSS, Javascript and MySQL.
 
-Note: Pricing Slider doesn't work. Also the code has security vulnerability against SQL injection so the SQL code needs to be improved.
+Note: pricing slider and payment provider doesn't work. Also the code has security vulnerability against SQL injection.
 
 # Installation
 
