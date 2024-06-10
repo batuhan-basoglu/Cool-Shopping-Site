@@ -259,6 +259,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 
 		$p_id = $_POST["proId"];
 		
+		
 
 		if(isset($_SESSION["uid"])){
 
@@ -275,7 +276,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				</div>
 			";//not in video
 		} else {
-			$sql = "INSERT INTO `cart` (`p_id`, `ip_add`, `user_id`, `qty`) VALUES ('$p_id','$ip_add','$user_id','1')";
+			$db_sql = "SELECT * FROM cart";
+			$db_query = mysqli_query($con, $db_sql);
+			$count_db = mysqli_num_rows($db_query);
+			$sql = "INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES ($count_db + 1,'$p_id','$ip_add','$user_id','1')";
 			if(mysqli_query($con,$sql)){
 				$sql = "DELETE FROM wishlist WHERE p_id = '$p_id' AND user_id = '$_SESSION[uid]'";
 			
@@ -289,9 +293,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			}
 		}
 		}else{
-			$sql = "SELECT id FROM cart WHERE ip_add = '$ip_add' AND p_id = '$p_id' AND user_id = -1";
-			$query = mysqli_query($con,$sql);
-			if (mysqli_num_rows($query) > 0) {
+			$sql = "SELECT * FROM cart WHERE p_id = '$p_id' AND user_id = -1";
+			$run_query = mysqli_query($con,$sql);
+			$count = mysqli_num_rows($run_query);
+			if ($count > 0) {
 				echo "
 					<div class='alert alert-warning'>
 							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -299,7 +304,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 					</div>";
 					exit();
 			}
-			$sql = "INSERT INTO `cart` (`p_id`, `ip_add`, `user_id`, `qty`) VALUES ('$p_id','$ip_add','-1','1')";
+			$db_sql = "SELECT * FROM cart";
+			$db_query = mysqli_query($con, $db_sql);
+			$count_db = mysqli_num_rows($db_query);
+			$sql = "INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES ($count_db + 1,'$p_id','$ip_add','-1','1')";
 			if (mysqli_query($con,$sql)) {
 				
 				$sql = "DELETE FROM wishlist WHERE p_id = '$p_id' AND ip_add = '$ip_add'";
@@ -338,7 +346,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 				</div>
 			";//not in video
 		} else {
-			$sql = "INSERT INTO `wishlist` (`p_id`, `ip_add`, `user_id`) VALUES ('$p_id','$ip_add','$user_id')";
+			$db_sql = "SELECT * FROM wishlist";
+			$db_query = mysqli_query($con, $db_sql);
+			$count_db = mysqli_num_rows($db_query);
+			$sql = "INSERT INTO `wishlist` (`id`, `p_id`, `ip_add`, `user_id`) VALUES ($count_db + 1,'$p_id','$ip_add','$user_id')";
 			if(mysqli_query($con,$sql)){
 				$sql = "DELETE FROM cart WHERE p_id = '$p_id' AND user_id = '$_SESSION[uid]'";
 			
@@ -352,7 +363,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			}
 		}
 		}else{
-			$sql = "SELECT id FROM wishlist WHERE ip_add = '$ip_add' AND p_id = '$p_id' AND user_id = -1";
+			$sql = "SELECT * FROM wishlist WHERE p_id = '$p_id' AND user_id = -1";
 			$query = mysqli_query($con,$sql);
 			if (mysqli_num_rows($query) > 0) {
 				echo "
@@ -362,7 +373,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 					</div>";
 					exit();
 			}
-			$sql = "INSERT INTO `wishlist` (`p_id`, `ip_add`, `user_id`) VALUES ('$p_id','$ip_add','-1')";
+			$db_sql = "SELECT * FROM wishlist";
+			$db_query = mysqli_query($con, $db_sql);
+			$count_db = mysqli_num_rows($db_query);
+			$sql = "INSERT INTO `wishlist` (`id`, `p_id`, `ip_add`, `user_id`) VALUES ($count_db + 1,'$p_id','$ip_add','-1')";
 			if (mysqli_query($con,$sql)) {
 				$sql = "DELETE FROM cart WHERE p_id = '$p_id' AND ip_add = '$ip_add'";
 
