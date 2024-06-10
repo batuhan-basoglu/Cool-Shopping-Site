@@ -53,7 +53,7 @@ include "header.php";
                                         <p class="itemNumber">#'.$product_id.'</p>
                                         <h3>'.$product_title.'</h3>
                                         
-                                        <p> '.$qty.' x &#x20B9; '.$product_price.'</p>
+                                        <p> '.$qty.' x $; '.$product_price.'</p>
                                         
                                         <p class="stockStatus"> Delivered</p>
                                         </div>  
@@ -61,7 +61,7 @@ include "header.php";
                                         <div class="prodTotal cartSection"><p>'.$qty.'</p></div>
                                         <td>
                                         <div class="prodTotal cartSection">
-                                        <p>&#x20B9; '.$product_price.'</p>
+                                        <p>'.$product_price.' $</p>
                                         </div>
                                         </td>
                                         <div class="cartSection removeWrap">
@@ -83,12 +83,12 @@ include "header.php";
                         </div></div>
                         <div class="subtotal cf">
                             <ul>
-                            <li class="totalRow"><span class="label">Subtotal</span><span class="value">&#x20B9; '.$prev_total.'</span></li>
+                            <li class="totalRow"><span class="label">Subtotal</span><span class="value">'.$prev_total.' $</span></li>
                             
-                                <li class="totalRow"><span class="label">Shipping</span><span class="value">&#x20B9; 0.00</span></li>
+                                <li class="totalRow"><span class="label">Shipping</span><span class="value">0.00 $</span></li>
                             
-                                    <li class="totalRow"><span class="label">Tax</span><span class="value">&#x20B9; 0.00</span></li>
-                                    <li class="totalRow final"><span class="label">Total</span><span class="value">&#x20B9;'.$prev_total.'</span></li>
+                                    <li class="totalRow"><span class="label">Tax</span><span class="value">0.00 $</span></li>
+                                    <li class="totalRow final"><span class="label">Total</span><span class="value">'.$prev_total.' $</span></li>
                             
                             </ul>
                         </div>
@@ -104,7 +104,7 @@ include "header.php";
                                         <p class="itemNumber">#'.$product_id.'</p>
                                         <h3>'.$product_title.'</h3>
                                         
-                                        <p> '.$qty.' x &#x20B9; '.$product_price.'</p>
+                                        <p> '.$qty.' x $ '.$product_price.'</p>
                                         
                                         <p class="stockStatus out"> Shipping</p>
                                         </div>  
@@ -112,7 +112,7 @@ include "header.php";
                                         <div class="prodTotal cartSection"><p>'.$qty.'</p></div>
                                         <td>
                                         <div class="prodTotal cartSection">
-                                        <p>&#x20B9; '.$product_price.'</p>
+                                        <p>'.$product_price.' $</p>
                                         </div>
                                         </td>
                                         <div class="cartSection removeWrap">
@@ -132,12 +132,12 @@ include "header.php";
                                     </div></div>
                                     <div class="subtotal cf">
                                         <ul>
-                                        <li class="totalRow"><span class="label">Subtotal</span><span class="value">&#x20B9; '.$prev_total.'</span></li>
+                                        <li class="totalRow"><span class="label">Subtotal</span><span class="value">'.$prev_total.' $</span></li>
                                         
-                                            <li class="totalRow"><span class="label">Shipping</span><span class="value">&#x20B9; 0.00</span></li>
+                                            <li class="totalRow"><span class="label">Shipping</span><span class="value">0.00 $</span></li>
                                         
-                                                <li class="totalRow"><span class="label">Tax</span><span class="value">&#x20B9; 0.00</span></li>
-                                                <li class="totalRow final"><span class="label">Total</span><span class="value">&#x20B9;'.$prev_total.'</span></li>
+                                                <li class="totalRow"><span class="label">Tax</span><span class="value">0.00 $</span></li>
+                                                <li class="totalRow final"><span class="label">Total</span><span class="value">'.$prev_total.' $</span></li>
                                         
                                         </ul>
                                     </div>
