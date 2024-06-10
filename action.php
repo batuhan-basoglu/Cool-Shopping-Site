@@ -458,7 +458,7 @@ if (isset($_POST["Common"])) {
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">'.$product_title.'</a></h3>
-													<h4 class="product-price"><span class="qty">'.$n.'</span>$'.$product_price.'</h4>
+													<h4 class="product-price"><span class="qty">'.$n.'</span>'.$product_price.'$</h4>
 												</div>
 												
 											</div>'
@@ -470,7 +470,7 @@ if (isset($_POST["Common"])) {
             
             echo '<div class="cart-summary">
 				    <small class="qty">'.$n.' Item(s) selected</small>
-				    <h5>Rs'.$total_price.'</h5>
+				    <h5>'.$total_price.'$</h5>
 				</div>'
             ?>
 				
