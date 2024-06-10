@@ -127,7 +127,7 @@ session_start();
 						<li><a href="https://www.google.com/maps/place/Montreal,+QC/"><i class="fa fa-map-marker"></i>Montreal</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="https://www.bankofcanada.ca/rates/exchange/currency-converter/"><i class="fa fa-usd"></i> CAD</a></li>
+						<li><a href="https://www.bankofcanada.ca/rates/exchange/currency-converter/ target="_blank""><i class="fa fa-usd"></i> CAD</a></li>
 						<li><?php
 						
                              include "db.php";
