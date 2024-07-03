@@ -1,6 +1,6 @@
 # Cool Shopping Site
 
-A cool shopping site made using PHP, CSS, Javascript and MySQL.
+A cool shopping site made using PHP, CSS, JavaScript and SQL.
 
 Note: pricing slider and payment provider doesn't work. Also the code has security vulnerability against SQL injection.
 
