@@ -134,7 +134,7 @@ include "header.php";
 										<span class="product-available">In Stock</span>
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+									<!--
 									<div class="product-options">
 										<label>
 											Size
@@ -149,8 +149,10 @@ include "header.php";
 											</select>
 										</label>
 									</div>
+									-->
 
 									<div class="add-to-cart">
+										<!--
 										<div class="qty-label">
 											Qty
 											<div class="input-number">
@@ -158,7 +160,7 @@ include "header.php";
 												<span class="qty-up">+</span>
 												<span class="qty-down">-</span>
 											</div>
-										</div>
+										</div>-->
 										<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
 										<button class="add-to-cart-btn" pid="'.$row['product_id'].'"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
 										</div>
