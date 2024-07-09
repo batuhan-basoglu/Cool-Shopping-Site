@@ -72,7 +72,7 @@ include "topheader.php";
                           $substr = substr($product_name,0,36);
                           // $price = round($price*0.014,2);
                         echo "<tr><td><img src='../../product_images/$image' style='width:50px; height:50px; border:groove #000'></td><td>$substr</td>
-                        <td>RS $price</td>
+                        <td>$price CAD</td>
                         <td> ";
                     
                       if ($_SESSION['role'] != 'e') {

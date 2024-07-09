@@ -126,10 +126,10 @@ if(isset($_POST["getProduct"])){
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
-										<div class='product-label'>
+										<!--<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>
-										</div>
+										</div>-->
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
@@ -158,8 +158,8 @@ if(isset($_POST["getProduct"])){
 										echo "</div>
 										<div class='product-btns'>
 											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<!--<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>-->
+											<!--<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>-->
 										</div>
 									</div>
 									<div class='add-to-cart'>
@@ -207,10 +207,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
 										<img  src='product_images/$pro_image'  style='max-height: 170px;' alt=''>
-										<div class='product-label'>
+										<!--<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>
-										</div>
+										</div>-->
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
@@ -239,8 +239,8 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 										echo "</div>
 										<div class='product-btns'>
 											<button pid='$pro_id' id='wishlist' class='add-to-wishlist' tabindex='0'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view' ><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<!--<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>-->
+											<!--<button class='quick-view' ><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>-->
 										</div>
 									</div>
 									<div class='add-to-cart'>

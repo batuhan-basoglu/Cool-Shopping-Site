@@ -134,7 +134,7 @@
                     include 'db.php';
 								
                     
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 70 AND 75";
+					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 62 AND 67";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -156,8 +156,6 @@
 									<a href='product.php?p=$pro_id'><div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
 										</div>
 									</div></a>
 									<div class='product-body'>
@@ -188,8 +186,8 @@
 										echo "</div>
 										<div class='product-btns'>
 											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<!--<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>-->
+											<!--<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>-->
 										</div>
 									</div>
 									<div class='add-to-cart'>
@@ -228,10 +226,9 @@
 		<!-- /SECTION -->
 
 		<!-- HOT DEAL SECTION -->
+		<!--
 		<div id="hot-deal" class="section mainn mainn-raised">
-			<!-- container -->
 			<div class="container">
-				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
 						<div class="hot-deal">
@@ -267,10 +264,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
+		-->
 		<!-- /HOT DEAL SECTION -->
 		
 
@@ -301,7 +297,7 @@
                     include 'db.php';
 								
                     
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 59 AND 65";
+					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 1 AND 7";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -322,10 +318,10 @@
 								<div class='product'>
 									<a href='product.php?p=$pro_id'><div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
-										<div class='product-label'>
+										<!--<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>
-										</div>
+										</div>-->
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
@@ -355,8 +351,8 @@
 										echo "</div>
 										<div class='product-btns'>
 											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<!--<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>-->
+											<!--<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>-->
 										</div>
 									</div>
 									<div class='add-to-cart'>

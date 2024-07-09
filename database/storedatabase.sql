@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 09, 2024 at 12:24 AM
+-- Generation Time: Jul 09, 2024 at 09:58 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -68,7 +68,7 @@ INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
 (1, 'HP'),
 (2, 'Samsung'),
 (3, 'Apple'),
-(4, 'motorolla'),
+(4, 'Motorolla'),
 (5, 'LG'),
 (6, 'Cloth Brand');
 
@@ -202,7 +202,7 @@ CREATE TABLE `orders_info` (
 --
 
 INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) VALUES
-(1, 1, 'support', 'batuhanbasoglu@mailbox.org', 'Montreal, Quebec, Canada', 'Montreal', 'Quebec', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
+(1, 1, 'Batuhan Basoglu', 'batuhanbasoglu@mailbox.org', 'Montreal, Quebec, Canada', 'Montreal', 'Quebec', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 667, 1234);
 
 -- --------------------------------------------------------
 
@@ -238,7 +238,7 @@ CREATE TABLE `products` (
   `product_cat` int(100) NOT NULL,
   `product_brand` int(100) NOT NULL,
   `product_title` varchar(255) NOT NULL,
-  `product_price` int(100) NOT NULL,
+  `product_price` float NOT NULL,
   `product_desc` text NOT NULL,
   `product_image` text NOT NULL,
   `product_keywords` text NOT NULL

@@ -18,6 +18,7 @@ $cat_id = $_GET['cat_id'];
 						<!-- /aside Widget -->
 
 						<!-- aside Widget -->
+						<!-- 
 						<div class="aside">
 							<h3 class="aside-title">Price</h3>
 							<div class="price-filter">
@@ -35,6 +36,7 @@ $cat_id = $_GET['cat_id'];
 								</div>
 							</div>
 						</div>
+						-->
 						<!-- /aside Widget -->
 
 						<!-- aside Widget -->
@@ -59,6 +61,7 @@ $cat_id = $_GET['cat_id'];
 					<div id="store" class="col-md-9">
 						<!-- store top filter -->
 						<div class="store-filter clearfix">
+							<!-- 
 							<div class="store-sort">
 								<label>
 									Sort By:
@@ -75,7 +78,7 @@ $cat_id = $_GET['cat_id'];
 										<option value="1">50</option>
 									</select>
 								</label>
-							</div>
+							</div> -->
 							<!-- 
 							<ul class="store-grid">
 								<li class="active"><i class="fa fa-th"></i></li>
