@@ -2,7 +2,7 @@
 
 A cool shopping site made using PHP, CSS, JavaScript and SQL.
 
-Note: pricing slider and payment provider doesn't work. Also the code has security vulnerability against SQL injection.
+Note: Payment provider doesn't work. Also the code has security vulnerability against SQL injection.
 
 # Installation
 

@@ -58,6 +58,7 @@ include 'header.php';
 					<div id="store" class="col-md-9">
 						<!-- store top filter -->
 						<div class="store-filter clearfix">
+							<!-- 
 							<div class="store-sort">
 								<label>
 									Sort By:
@@ -74,7 +75,7 @@ include 'header.php';
 										<option value="1">50</option>
 									</select>
 								</label>
-							</div>
+							</div> -->
 							<!-- 
 							<ul class="store-grid">
 								<li class="active"><i class="fa fa-th"></i></li>
