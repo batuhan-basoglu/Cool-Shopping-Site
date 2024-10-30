@@ -40,5 +40,5 @@ Here are some existing users for login
     
 # Author
 
-Made by Batuhan Başoğlu
+Made by Batuhan Berk Başoğlu
 
